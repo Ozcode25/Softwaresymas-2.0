@@ -1,0 +1,131 @@
+/* Variables CSS para control centralizado de colores */
+:root {
+  /* Paleta de colores */
+  --color1: #09686b;
+  --bg-color1: #0c7a7e;
+  --color2: #1078b4;
+  --bg-color2: #1e90ff;
+  --color3: #000080;
+  --bg-color3: #000080;
+  --color4: #87CEEB;
+  --bg-color4: #87CEEB;
+  --color5: #116fce;
+  --bg-color5: #122e4b;
+
+  /* Color de fondo principal */
+  --primary-bg: #5c687e;
+
+  /* Colores del menú */
+  --menu-bg: rgba(12, 122, 126, 0.9); /* Fondo semitransparente */
+  --menu-text: white;
+  --menu-hover: #1e90ff;
+}
+
+/* Global */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--primary-bg);
+  margin: 0;
+  padding: 0;
+}
+
+/* Fuente personalizada para títulos */
+.font-titulo {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Clases de color utilizando variables */
+.color1 { color: var(--color1); }
+.bg-color1 { background-color: var(--bg-color1); }
+.color2 { color: var(--color2); }
+.bg-color2 { background-color: var(--bg-color2); }
+.color3 { color: var(--color3); }
+.bg-color3 { background-color: var(--bg-color3); }
+.color4 { color: var(--color4); }
+.bg-color4 { background-color: var(--bg-color4); }
+.color5 { color: var(--color5); }
+.bg-color5 { background-color: var(--bg-color5); }
+
+/* Animación para iconos */
+.icon-animation {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.icon-animation:active {
+  transform: scale(1.2) rotate(20deg);
+}
+
+/* Tamaño de los iconos */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+}
+
+/* Color del título */
+.title-color {
+  color: gray;
+}
+
+/* 📌 Menú Hamburguesa */
+nav {
+  background: var(--menu-bg);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Botón del menú */
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--menu-text);
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+.menu-button:active {
+  transform: scale(1.1);
+}
+
+/* Estilos del menú */
+.menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: var(--menu-bg);
+  padding: 1rem;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+}
+.menu a {
+  color: var(--menu-text);
+  text-decoration: none;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  display: block;
+  transition: background 0.3s;
+}
+.menu a:hover {
+  background: var(--menu-hover);
+}
+
+/* Mostrar menú cuando está activo */
+.menu.active {
+  display: flex;
+  opacity: 1;
+}

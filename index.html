@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio Técnico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    
+    <!-- Navbar -->
+    <nav class="bg-blue-900 bg-opacity-75 text-white p-4 flex justify-between items-center fixed w-full top-0 z-50">
+        <div class="flex items-center space-x-4">
+            <img src="Softwaresymas2025logo.png" alt="Logo de Softwares y Más" class="h-10">
+            <span class="text-xl font-semibold">Softwaresymas</span>
+        </div>
+        <button class="md:hidden text-white focus:outline-none" id="menu-button">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+        <ul class="hidden md:flex space-x-6" id="menu">
+            <li><a href="#servicios" class="hover:text-gray-300">Servicios</a></li>
+            <li><a href="#nosotros" class="hover:text-gray-300">Sobre Nosotros</a></li>
+            <li><a href="#contacto" class="hover:text-gray-300">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menú desplegable en móviles -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 w-full bg-blue-900 text-white p-4">
+        <ul class="flex flex-col space-y-4">
+            <li><a href="#servicios" class="hover:text-gray-300">Servicios</a></li>
+            <li><a href="#nosotros" class="hover:text-gray-300">Sobre Nosotros</a></li>
+            <li><a href="#contacto" class="hover:text-gray-300">Contacto</a></li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <header class="text-center py-16 bg-blue-600 text-white mt-16">
+        <img src="Softwaresymas2025logo.png" alt="Logo de Softwares y Más" class="h-24 mx-auto">
+        <h1 class="text-4xl font-bold mt-4">Servicio Técnico Especializado</h1>
+        <p class="text-lg mt-2">Reparación, mantenimiento y optimización de tus dispositivos tecnológicos.</p>
+        <a href="#contacto" class="mt-4 inline-block bg-yellow-500 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400">¡Agenda tu servicio ahora!</a>
+    </header>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="py-12 px-6">
+        <h2 class="text-center text-3xl font-bold mb-6">Servicios que Ofrecemos</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 shadow-md rounded-lg text-center">
+                <h3 class="text-xl font-semibold">Reparación de Computadoras</h3>
+                <p class="mt-2">Diagnóstico y solución de problemas en hardware y software.</p>
+            </div>
+            <div class="bg-white p-6 shadow-md rounded-lg text-center">
+                <h3 class="text-xl font-semibold">Instalación de Software</h3>
+                <p class="mt-2">Programas esenciales, actualizaciones y optimización del sistema.</p>
+            </div>
+            <div class="bg-white p-6 shadow-md rounded-lg text-center">
+                <h3 class="text-xl font-semibold">Mantenimiento Preventivo</h3>
+                <p class="mt-2">Limpieza interna, control de temperatura y mejora del rendimiento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="nosotros" class="py-12 bg-gray-200 px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4">Sobre Nosotros</h2>
+        <p class="max-w-2xl mx-auto">Somos una empresa con más de 10 años de experiencia en soporte técnico y soluciones informáticas. Nos comprometemos a ofrecer un servicio eficiente y de calidad.</p>
+        <img src="Mi-Imagen.JPG" alt="Imagen del Técnico" class="mt-6 h-32 mx-auto rounded-full border-4 border-blue-600">
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-12 px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4">Contáctanos</h2>
+        <p>Para más información o para solicitar un servicio, contáctanos por nuestras redes sociales:</p>
+        <div class="flex justify-center mt-4 space-x-6">
+            <a href="https://api.whatsapp.com/send/?phone=50760690148&text&type=phone_number&app_absent=0" target="_blank">
+                <img src="whatsapp-icon.png" alt="WhatsApp" class="h-10">
+            </a>
+            <a href="https://www.instagram.com/softwaresymas/?igsh=MTQ1Z2tsN2JxYWd2Ng%3D%3D" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram" class="h-10">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-4">
+        <p>&copy; 2025 Softwaresymas. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
