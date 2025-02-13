@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Servicio Técnico</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
@@ -11,46 +12,36 @@
     
     <!-- Navbar -->
     <nav class="bg-blue-900 bg-opacity-75 text-white p-4 flex justify-between items-center fixed w-full top-0 z-50">
-        <div class="flex items-center space-x-4">
-            <img src="Softwaresymas2025logo.png" alt="Logo de Softwares y Más" class="h-10">
-            <span class="text-xl font-semibold">Softwaresymas</span>
-        </div>
-        <button class="md:hidden text-white focus:outline-none" id="menu-button">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-        </button>
-        <ul class="hidden md:flex space-x-6" id="menu">
-            <li><a href="#servicios" class="hover:text-gray-300">Servicios</a></li>
-            <li><a href="#nosotros" class="hover:text-gray-300">Sobre Nosotros</a></li>
-            <li><a href="#contacto" class="hover:text-gray-300">Contacto</a></li>
-        </ul>
+      <div class="flex items-center space-x-4">
+      <img src="Softwaresymas2025logo.png" alt="Logo de Softwares y Más" class="h-10">
+      <span class="text-xl font-semibold">Softwaresymas</span>
+      </div>
+      <button class="md:hidden text-white focus:outline-none" id="menu-button">
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+      </button>
+      <ul class="hidden md:flex space-x-6" id="menu">
+      <li><a href="#servicios" class="hover:text-skyblue-300">Servicios</a></li>
+      <li><a href="#nosotros" class="hover:text-gray-300">Sobre Nosotros</a></li>
+      <li><a href="#contacto" class="hover:text-gray-300">Contacto</a></li>
+      </ul>
     </nav>
-
-    <!-- Menú desplegable en móviles -->
-    <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 w-full bg-blue-900 text-white p-4">
-        <ul class="flex flex-col space-y-4">
-            <li><a href="#servicios" class="hover:text-gray-300">Servicios</a></li>
-            <li><a href="#nosotros" class="hover:text-gray-300">Sobre Nosotros</a></li>
-            <li><a href="#contacto" class="hover:text-gray-300">Contacto</a></li>
-        </ul>
-    </div>
-
     <script>
-        document.getElementById('menu-button').addEventListener('click', function() {
-            var mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
+      document.getElementById('menu-button').addEventListener('click', function() {
+      var menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+      });
     </script>
-
+  
     <!-- Hero Section -->
-    <header class="text-center py-16 bg-blue-600 text-white mt-16">
+    <header class="text-center py-16 bg-blue-600 text-white">
         <img src="Softwaresymas2025logo.png" alt="Logo de Softwares y Más" class="h-24 mx-auto">
         <h1 class="text-4xl font-bold mt-4">Servicio Técnico Especializado</h1>
         <p class="text-lg mt-2">Reparación, mantenimiento y optimización de tus dispositivos tecnológicos.</p>
         <a href="#contacto" class="mt-4 inline-block bg-yellow-500 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400">¡Agenda tu servicio ahora!</a>
     </header>
-
+    
     <!-- Sección de Servicios -->
     <section id="servicios" class="py-12 px-6">
         <h2 class="text-center text-3xl font-bold mb-6">Servicios que Ofrecemos</h2>
@@ -69,32 +60,72 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Sobre Nosotros -->
-    <section id="nosotros" class="py-12 bg-gray-200 px-6 text-center">
+    <section id="nosotros" class="py-12 bg-blue-200 px-6 text-center">
         <h2 class="text-3xl font-bold mb-4">Sobre Nosotros</h2>
         <p class="max-w-2xl mx-auto">Somos una empresa con más de 10 años de experiencia en soporte técnico y soluciones informáticas. Nos comprometemos a ofrecer un servicio eficiente y de calidad.</p>
         <img src="Mi-Imagen.JPG" alt="Imagen del Técnico" class="mt-6 h-32 mx-auto rounded-full border-4 border-blue-600">
     </section>
-
+    
     <!-- Contacto -->
     <section id="contacto" class="py-12 px-6 text-center">
-        <h2 class="text-3xl font-bold mb-4">Contáctanos</h2>
-        <p>Para más información o para solicitar un servicio, contáctanos por nuestras redes sociales:</p>
-        <div class="flex justify-center mt-4 space-x-6">
-            <a href="https://api.whatsapp.com/send/?phone=50760690148&text&type=phone_number&app_absent=0" target="_blank">
-                <img src="whatsapp-icon.png" alt="WhatsApp" class="h-10">
-            </a>
-            <a href="https://www.instagram.com/softwaresymas/?igsh=MTQ1Z2tsN2JxYWd2Ng%3D%3D" target="_blank">
-                <img src="instagram-icon.png" alt="Instagram" class="h-10">
-            </a>
+      <h2 class="text-3xl font-bold mb-4">Contáctanos</h2>
+      <p>Para más información o para solicitar un servicio, contáctanos por nuestras redes sociales:</p>
+      <div class="flex justify-center mt-4 space-x-6">
+        <a href="https://api.whatsapp.com/send/?phone=50760690148&text&type=phone_number&app_absent=0" target="_blank">
+          <img src="whatsapp-icon.png" alt="WhatsApp" class="h-10">
+  <a href="https://www.instagram.com/softwaresymas/?igsh=MTQ1Z2tsN2JxYWd2Ng%3D%3D" target="_blank">
+    <img src="instagram-icon.png" alt="Instagram" class="h-10">
+  </a>
+      </div>
+      <p class="mt-6">También puedes enviarnos un mensaje directo desde aquí:</p>
+      <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          var name = document.getElementById('name').value;
+          var email = document.getElementById('email').value;
+          var message = document.getElementById('message').value;
+
+          var mailtoLink = 'mailto:softwaresymas507@gmail.com' +
+               '?subject=' + encodeURIComponent('Nuevo mensaje de ' + name) +
+               '&body=' + encodeURIComponent('Nombre: ' + name + '\nCorreo Electrónico: ' + email + '\n\nMensaje:\n' + message);
+
+          window.location.href = mailtoLink;
+          document.getElementById('confirmation').classList.remove('hidden');
+          this.reset();
+        });
+      </script>
+      <form id="contact-form" class="mt-8 max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-4">Formulario de Contacto</h3>
+        <div class="mb-4">
+          <label for="name" class="block text-left mb-2">Nombre:</label>
+          <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded" required>
         </div>
+        <div class="mb-4">
+          <label for="email" class="block text-left mb-2">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded" required>
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-left mb-2">Mensaje:</label>
+          <textarea id="message" name="message" class="w-full p-2 border border-gray-300 rounded" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-500">Enviar</button>
+        <p id="confirmation" class="mt-4 text-green-600 hidden">¡Mensaje enviado con éxito!</p>
+      </form>
     </section>
 
+    <script>
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        document.getElementById('confirmation').classList.remove('hidden');
+        this.reset();
+      });
+    </script>
     <!-- Footer -->
     <footer class="bg-blue-900 text-white text-center py-4">
         <p>&copy; 2025 Softwaresymas. Todos los derechos reservados.</p>
     </footer>
-
+    
 </body>
 </html>
