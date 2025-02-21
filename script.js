@@ -30,21 +30,38 @@ document.addEventListener('DOMContentLoaded', () => {
       if (element.tagName === 'A' && !element.getAttribute('href')) {
         event.preventDefault();
 
-  // Inicializar EmailJS con tu User ID
+ // Esperar a que el DOM cargue completamente
 document.addEventListener("DOMContentLoaded", function() {
-    emailjs.init("TU_USER_ID"); // xYv1y_Au9KLSp0PGj
+    // Inicializar EmailJS con tu User ID
+    emailjs.init("Vf-tCReJfgzAO5Ma4"); // Reemplázalo con tu USER_ID de EmailJS
 });
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {
+document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault(); // Evita que la página se recargue
 
-    emailjs.sendForm("service_eki6jw1", "template_n1szq0f", this)
-    .then(function() {
-        document.getElementById("responseMessage").textContent = "✅ Mensaje enviado con éxito.";
-        document.getElementById("contactForm").reset(); // Limpia el formulario
+    // Obtener los valores del formulario
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    // Enviar datos a EmailJS
+    emailjs.send("service_eki6jw1", "template_n1szq0f", {
+        name: name,
+        email: email,
+        message: message
+    })
+    .then(function(response) {
+        console.log("Correo enviado con éxito:", response);
+        document.getElementById("confirmation").textContent = "✅ ¡Mensaje enviado con éxito!";
+        document.getElementById("confirmation").classList.remove("hidden");
+        document.getElementById("contact-form").reset(); // Limpiar formulario
     }, function(error) {
-        document.getElementById("responseMessage").textContent = "❌ Error al enviar el mensaje.";
-        console.error("Error:", error);
+        console.error("Error al enviar:", error);
+        document.getElementById("confirmation").textContent = "❌ Hubo un error al enviar el mensaje.";
+        document.getElementById("confirmation").classList.remove("hidden");
+    });
+});
+
     });
 });
       
