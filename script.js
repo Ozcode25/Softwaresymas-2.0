@@ -29,11 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
       // Previene el comportamiento predeterminado de los enlaces sin destino
       if (element.tagName === 'A' && !element.getAttribute('href')) {
         event.preventDefault();
-
- // Esperar a que el DOM cargue completamente
+        
 document.addEventListener("DOMContentLoaded", function() {
     // Inicializar EmailJS con tu User ID
-    emailjs.init("Vf-tCReJfgzAO5Ma4"); // Reemplázalo con tu USER_ID de EmailJS
+    emailjs.init(Vf-tCReJfgzAO5Ma4); // Reemplázalo con tu USER_ID de EmailJS
 });
 
 document.getElementById("contact-form").addEventListener("submit", function(event) {
@@ -45,7 +44,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     var message = document.getElementById("message").value;
 
     // Enviar datos a EmailJS
-    emailjs.send("service_eki6jw1", "template_n1szq0f", {
+    emailjs.send (service_eki6jw1,template_n1szq0f), {
         name: name,
         email: email,
         message: message
