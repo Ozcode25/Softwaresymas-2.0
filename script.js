@@ -29,6 +29,25 @@ document.addEventListener('DOMContentLoaded', () => {
       // Previene el comportamiento predeterminado de los enlaces sin destino
       if (element.tagName === 'A' && !element.getAttribute('href')) {
         event.preventDefault();
+
+  // Inicializar EmailJS con tu User ID
+document.addEventListener("DOMContentLoaded", function() {
+    emailjs.init("TU_USER_ID"); // xYv1y_Au9KLSp0PGj
+});
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita que la página se recargue
+
+    emailjs.sendForm("service_eki6jw1", "template_n1szq0f", this)
+    .then(function() {
+        document.getElementById("responseMessage").textContent = "✅ Mensaje enviado con éxito.";
+        document.getElementById("contactForm").reset(); // Limpia el formulario
+    }, function(error) {
+        document.getElementById("responseMessage").textContent = "❌ Error al enviar el mensaje.";
+        console.error("Error:", error);
+    });
+});
+      
       }
     });
   });
