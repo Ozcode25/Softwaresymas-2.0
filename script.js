@@ -58,6 +58,20 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         console.error("Error al enviar:", error);
         document.getElementById("confirmation").textContent = "❌ Hubo un error al enviar el mensaje.";
         document.getElementById("confirmation").classList.remove("hidden");
+
+      // Comentarios
+function addComment() {
+    let commentText = document.getElementById('newComment').value;
+    if (commentText.trim() === "") {
+        alert("Por favor, escribe un comentario.");
+        return;
+    }
+    let commentDiv = document.createElement('div');
+    commentDiv.classList.add('comment');
+    commentDiv.textContent = `"${commentText}" - Cliente Anónimo`;
+    document.getElementById('comments').appendChild(commentDiv);
+    document.getElementById('newComment').value = "";
+}
     });
 });
 
