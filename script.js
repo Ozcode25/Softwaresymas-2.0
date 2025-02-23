@@ -59,18 +59,38 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         document.getElementById("confirmation").textContent = "❌ Hubo un error al enviar el mensaje.";
         document.getElementById("confirmation").classList.remove("hidden");
 
-      // Comentarios
+  // script.js
+function loadComments() {
+    let comments = JSON.parse(localStorage.getItem('comments')) || [
+        "Excelente servicio, mi laptop quedó como nueva! - Juan Pérez",
+        "Muy profesional y rápido, solucionó mi problema en minutos. - María López",
+        "Recomendado al 100%, precios justos y gran atención. - Carlos Gómez"
+    ];
+    let commentsContainer = document.getElementById('comments');
+    commentsContainer.innerHTML = "";
+    comments.forEach(comment => {
+        let commentDiv = document.createElement('div');
+        commentDiv.classList.add('comment');
+        commentDiv.textContent = comment;
+        commentsContainer.appendChild(commentDiv);
+    });
+}
+
 function addComment() {
     let commentText = document.getElementById('newComment').value;
     if (commentText.trim() === "") {
         alert("Por favor, escribe un comentario.");
         return;
     }
-    let commentDiv = document.createElement('div');
-    commentDiv.classList.add('comment');
-    commentDiv.textContent = `"${commentText}" - Cliente Anónimo`;
-    document.getElementById('comments').appendChild(commentDiv);
+    let comments = JSON.parse(localStorage.getItem('comments')) || [];
+    let newComment = `"${commentText}" - Cliente Anónimo`;
+    comments.push(newComment);
+    localStorage.setItem('comments', JSON.stringify(comments));
     document.getElementById('newComment').value = "";
+    loadComments();
+}
+
+document.addEventListener('DOMContentLoaded', loadComments);
 }
     });
 });
