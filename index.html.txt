@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Softwares y Más | Servicio Técnico</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta
+    name="description"
+    content="Servicio técnico especializado en reparación de computadoras, instalación de software y mantenimiento preventivo en Panamá."
+  />
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <!-- NAVBAR -->
+  <header class="border-b border-slate-800/70 bg-slate-950/70 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#inicio" class="flex items-center gap-2">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-500/10 border border-emerald-400/40 text-emerald-300 font-bold text-lg">
+          S
+        </span>
+        <span class="font-semibold tracking-tight">Softwares y Más</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="#servicios" class="hover:text-emerald-300 transition">Servicios</a>
+        <a href="#stack" class="hover:text-emerald-300 transition">Tecnologías</a>
+        <a href="#sobre-nosotros" class="hover:text-emerald-300 transition">Sobre Nosotros</a>
+        <a href="#contacto" class="hover:text-emerald-300 transition">Contacto</a>
+        <a
+          href="https://api.whatsapp.com/send?phone=50760000000&text=Hola,%20quiero%20información%20sobre%20servicio%20técnico."
+          class="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-4 py-2 text-xs font-semibold text-slate-950 shadow-lg shadow-emerald-500/30 hover:bg-emerald-400 transition"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Agenda tu servicio
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio" class="max-w-6xl mx-auto px-4 pt-10 pb-16 space-y-20">
+    <!-- HERO -->
+    <section class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-6">
+        <p class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300/80">
+          <span class="h-1 w-6 rounded-full bg-emerald-400/80"></span>
+          Servicio Técnico Especializado
+        </p>
+        <h1 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-50">
+          Reparamos, optimizamos y cuidamos tus equipos tecnológicos.
+        </h1>
+        <p class="text-sm md:text-base text-slate-300 leading-relaxed">
+          Softwares y Más ofrece soporte técnico confiable para computadoras, laptops y sistemas de software.
+          Mantenimiento preventivo, instalación de programas, limpieza profunda y diagnóstico profesional,
+          todo en un solo lugar.
+        </p>
+
+        <div class="flex flex-wrap gap-3">
+          <a
+            href="https://api.whatsapp.com/send?phone=50760000000&text=Hola,%20necesito%20ayuda%20con%20mi%20computadora."
+            class="inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-2.5 text-sm font-semibold text-slate-950 shadow-lg shadow-emerald-500/30 hover:bg-emerald-400 transition"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Escríbenos por WhatsApp
+          </a>
+          <a
+            href="#servicios"
+            class="inline-flex items-center justify-center rounded-full border border-slate-700 px-6 py-2.5 text-sm font-semibold text-slate-100 hover:border-emerald-400/80 hover:text-emerald-200 transition"
+          >
+            Ver servicios
+          </a>
+        </div>
+
+        <div class="flex flex-wrap gap-6 text-xs text-slate-400">
+          <div>
+            <p class="text-emerald-300 font-semibold text-sm">+10 años</p>
+            <p>Experiencia en soporte técnico</p>
+          </div>
+          <div>
+            <p class="text-emerald-300 font-semibold text-sm">Atención</p>
+            <p>Rápida y personalizada</p>
+          </div>
+          <div>
+            <p class="text-emerald-300 font-semibold text-sm">Panamá</p>
+            <p>Servicios a nivel local</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -inset-4 rounded-3xl bg-emerald-500/10 blur-3xl"></div>
+        <div class="relative rounded-3xl border border-slate-800 bg-slate-900/70 p-6 shadow-xl space-y-4">
+          <p class="text-xs font-semibold text-emerald-300 uppercase tracking-[0.18em]">Lo que hacemos</p>
+          <ul class="space-y-4 text-sm text-slate-200">
+            <li class="flex gap-3">
+              <span class="mt-1 h-6 w-6 flex items-center justify-center rounded-full bg-emerald-500/15 border border-emerald-400/40 text-xs">1</span>
+              <div>
+                <p class="font-semibold">Diagnóstico completo</p>
+                <p class="text-slate-400 text-xs">
+                  Revisamos hardware, software, temperatura y rendimiento para detectar problemas reales.
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-6 w-6 flex items-center justify-center rounded-full bg-emerald-500/15 border border-emerald-400/40 text-xs">2</span>
+              <div>
+                <p class="font-semibold">Limpieza y optimización</p>
+                <p class="text-slate-400 text-xs">
+                  Limpieza interna, pasta térmica, eliminación de virus y configuración de arranque.
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-6 w-6 flex items-center justify-center rounded-full bg-emerald-500/15 border border-emerald-400/40 text-xs">3</span>
+              <div>
+                <p class="font-semibold">Entrega y asesoría</p>
+                <p class="text-slate-400 text-xs">
+                  Te explicamos qué se hizo, cómo cuidar tu equipo y qué mejoras puedes aplicar.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="space-y-6">
+      <div class="flex items-end justify-between gap-4">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300/80">Servicios</p>
+          <h2 class="text-2xl font-semibold tracking-tight text-slate-50 mt-2">Lo que podemos hacer por ti</h2>
+          <p class="text-sm text-slate-300 max-w-xl">
+            Desde una simple instalación de programas hasta la reparación completa de tu equipo.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 space-y-2">
+          <h3 class="font-semibold text-slate-50">Reparación de Computadoras</h3>
+          <p class="text-sm text-slate-300">
+            Diagnóstico y solución de fallas en hardware y software. Formateo, instalación de sistemas y recuperación básica de datos.
+          </p>
+        </article>
+
+        <article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 space-y-2">
+          <h3 class="font-semibold text-slate-50">Instalación de Software</h3>
+          <p class="text-sm text-slate-300">
+            Paquete Office, antivirus, herramientas profesionales, drivers y configuraciones necesarias para que tu PC funcione al 100%.
+          </p>
+        </article>
+
+        <article class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 space-y-2">
+          <h3 class="font-semibold text-slate-50">Mantenimiento Preventivo</h3>
+          <p class="text-sm text-slate-300">
+            Limpieza interna, cambio de pasta térmica, control de temperatura y optimización del sistema para alargar la vida útil de tus equipos.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- STACK (Frontend / Backend) -->
+    <section id="stack" class="space-y-6">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300/80">Tecnologías</p>
+        <h2 class="text-2xl font-semibold tracking-tight text-slate-50 mt-2">
+          Herramientas modernas para tu proyecto
+        </h2>
+        <p class="text-sm text-slate-300 max-w-xl">
+          Además del servicio técnico, desarrollamos páginas web y sistemas usando un stack actual de frontend y backend.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- FRONTEND CARD -->
+        <div class="rounded-3xl border border-emerald-500/25 bg-slate-900/70 p-6 space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-2xl bg-emerald-500/10 border border-emerald-400/50 text-lg">
+              &lt;/&gt;
+            </span>
+            <h3 class="text-xl font-semibold text-slate-50">Frontend</h3>
+          </div>
+
+          <div class="flex flex-wrap gap-3 mt-4">
+            <span class="px-4 py-1.5 rounded-full bg-slate-800 text-xs text-slate-100">Next.js</span>
+            <span class="px-4 py-1.5 rounded-full bg-slate-800 text-xs text-slate-100">React</span>
+            <span class="px-4 py-1.5 rounded-full bg-slate-800 text-xs text-slate-100">TypeScript</span>
+            <span class="px-4 py-1.5 rounded-full bg-slate-800 text-xs text-slate-100">TailwindCSS</span>
+            <span class="px-4 py-1.5 rounded-full bg-slate-800 text-xs text-slate-100">HTML5</span>
+            <span class="px-4 py-1.5 rounded-full bg-slate-800 text-xs text-slate-100">CSS3</span>
+          </div>
+        </div>
+
+        <!-- BACKEND CARD -->
+        <div class="rounded-3xl border border-emerald-500/25 bg-slate-900/70 p-6 space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-2xl bg-emerald-500/10 border border-emerald-400/50 text-lg">
+              ||
+            </span>
+            <h3 class="text-xl font-semibold text-slate-50">Backend</h3>
+          </div>
+
+          <div class="flex flex-wrap gap-3 mt-4">
+            <span class="px-4 py-1.5 rounded-full bg-slate-800 text-xs text-slate-100">Node.js</span>
+            <span class="px-4 py-1.5 rounded-full bg-slate-800 text-xs text-slate-100">Express</span>
+            <span class="px-4 py-1.5 rounded-full bg-slate-800 text-xs text-slate-100">Python</span>
+            <span class="px-4 py-1.5 rounded-full bg-slate-800 text-xs text-slate-100">PHP</span>
+            <span class="px-4 py-1.5 rounded-full bg-slate-800 text-xs text-slate-100">MySQL</span>
+            <span class="px-4 py-1.5 rounded-full bg-slate-800 text-xs text-slate-100">MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobre-nosotros" class="space-y-4">
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300/80">Sobre Nosotros</p>
+      <h2 class="text-2xl font-semibold tracking-tight text-slate-50">
+        Un aliado tecnológico para tu casa y tu negocio
+      </h2>
+      <p class="text-sm text-slate-300 max-w-3xl">
+        Softwares y Más nace de la necesidad de tener un servicio técnico cercano, honesto y claro.
+        Explicamos cada paso, damos seguimiento real a tus equipos y buscamos soluciones que se adapten a tu presupuesto.
+      </p>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="space-y-4">
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300/80">Testimonios</p>
+      <h2 class="text-2xl font-semibold tracking-tight text-slate-50">Lo que dicen nuestros clientes</h2>
+
+      <div class="grid md:grid-cols-3 gap-6 text-sm">
+        <figure class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 space-y-3">
+          <p class="text-slate-200">
+            “Excelente servicio, mi laptop quedó como nueva y corre mucho más rápido que antes.”
+          </p>
+          <figcaption class="text-xs text-slate-400">Kevin González</figcaption>
+        </figure>
+
+        <figure class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 space-y-3">
+          <p class="text-slate-200">
+            “Muy profesional, me explicó todo el proceso y me recomendó cómo cuidar mi equipo.”
+          </p>
+          <figcaption class="text-xs text-slate-400">María López</figcaption>
+        </figure>
+
+        <figure class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 space-y-3">
+          <p class="text-slate-200">
+            “Puntual, honesto y precios justos. 100% recomendado para cualquier problema con tu PC.”
+          </p>
+          <figcaption class="text-xs text-slate-400">Carlos Rodríguez</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="space-y-6">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300/80">Contacto</p>
+        <h2 class="text-2xl font-semibold tracking-tight text-slate-50 mt-2">
+          ¿Listo para agendar tu servicio?
+        </h2>
+        <p class="text-sm text-slate-300 max-w-xl">
+          Contáctanos por WhatsApp, Instagram o completa el formulario y te responderemos lo antes posible.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-[minmax(0,1.1fr),minmax(0,0.9fr)] gap-8">
+        <!-- FORM -->
+        <form class="space-y-4 rounded-2xl border border-slate-800 bg-slate-900/70 p-6">
+          <div class="space-y-1">
+            <label for="nombre" class="text-xs font-semibold text-slate-200">Nombre</label>
+            <input
+              id="nombre"
+              type="text"
+              placeholder="Tu nombre completo"
+              class="w-full rounded-xl border border-slate-700 bg-slate-950/60 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400"
+            />
+          </div>
+
+          <div class="space-y-1">
+            <label for="correo" class="text-xs font-semibold text-slate-200">Correo electrónico</label>
+            <input
+              id="correo"
+              type="email"
+              placeholder="tucorreo@ejemplo.com"
+              class="w-full rounded-xl border border-slate-700 bg-slate-950/60 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400"
+            />
+          </div>
+
+          <div class="space-y-1">
+            <label for="mensaje" class="text-xs font-semibold text-slate-200">Mensaje</label>
+            <textarea
+              id="mensaje"
+              rows="4"
+              placeholder="Cuéntanos brevemente qué problema presenta tu equipo."
+              class="w-full rounded-xl border border-slate-700 bg-slate-950/60 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400"
+            ></textarea>
+          </div>
+
+          <button
+            type="button"
+            class="w-full rounded-full bg-emerald-500 px-4 py-2.5 text-sm font-semibold text-slate-950 hover:bg-emerald-400 transition"
+          >
+            Enviar mensaje (ejemplo visual)
+          </button>
+
+          <p class="text-[11px] text-slate-500">
+            *Este formulario es de ejemplo. Puedes conectarlo con tu correo, Formspree o cualquier backend más adelante.
+          </p>
+        </form>
+
+        <!-- CONTACTO DIRECTO -->
+        <div class="space-y-4 text-sm">
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 space-y-2">
+            <h3 class="font-semibold text-slate-50">Contacto directo</h3>
+            <p class="text-slate-300">
+              WhatsApp: <span class="font-semibold text-emerald-300">+507 6000-0000</span><br />
+              Correo: <span class="font-semibold text-emerald-300">contacto@softwaresymas.com</span>
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 space-y-3">
+            <h3 class="font-semibold text-slate-50">Redes sociales</h3>
+            <div class="flex flex-wrap gap-3">
+              <a
+                href="https://api.whatsapp.com/send?phone=50760000000"
+                target="_blank"
+                rel="noreferrer"
+                class="inline-flex items-center gap-2 rounded-full border border-slate-700 px-4 py-2 text-xs text-slate-100 hover:border-emerald-400 hover:text-emerald-200 transition"
+              >
+                WhatsApp
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer"
+                class="inline-flex items-center gap-2 rounded-full border border-slate-700 px-4 py-2 text-xs text-slate-100 hover:border-emerald-400 hover:text-emerald-200 transition"
+              >
+                Instagram
+              </a>
+            </div>
+            <p class="text-xs text-slate-400">
+              Ideal para compartir tus trabajos, promociones y fotos de reparaciones realizadas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800/70">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+      <p>© 2025 Softwares y Más. Todos los derechos reservados.</p>
+      <p>Sitio desarrollado con HTML + TailwindCSS y desplegado en Vercel.</p>
+    </div>
+  </footer>
+</body>
+</html>
